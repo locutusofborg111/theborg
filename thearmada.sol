@@ -1,11 +1,12 @@
 /**
- *Submitted for verification at Etherscan.io on 2020-12-22
+ *Submitted for verification at Etherscan.io on 2020-12-29
 */
 
 /*
     ************************************************
-    * Armada (ARM) v1.2 - Resistance Is Not Futile *
+    * Armada (ARM) v1.3 - Resistance Is Not Futile *
     ************************************************
+    * Part of the BORG Ecosystem *******************
     * https://TheArmada.eth.link *******************
     * https://t.me/BORG_ResistanceIsFutile *********
     ************************************************
@@ -988,7 +989,7 @@ function _transfer(
     }
     
     function unPauseTransferForever() external nonReentrant {
-        // require (msg.sender == presale, "Only the presale contract can call this");
+        require (msg.sender == presale, "Only the presale contract can call this");
         transferPaused = false;
     }
  
